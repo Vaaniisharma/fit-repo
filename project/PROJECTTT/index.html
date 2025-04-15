@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #heading{
+        height: 8vh;
+       font-size: 20px;
+        background-color: bisque;
+        width: 500px;
+    }
+    #bar{
+        height: 30px;
+        width: 80%;
+        background-color: aqua;
+        border-radius: 20px;
+    }
+    #innerbar{
+        height: 100%;
+        width: 20%;
+        background-color: aquamarine;
+        border-radius: 20px;
+    }
+</style>
+<body>
+    <div id="heading">  <input id="input" type="text" value="">
+    <button id="btn">add</button></div>
+    <div id="bar">
+<div id="innerbar"></div>
+    </div>
+
+
+
+
+    <script>
+        var input;
+        var innerbar;
+ var btn=document.getElementById("btn").addEventListener("click",display)
+ function display(){
+var input=document.getElementById('input').value;
+ var innerbar=document.getElementById("innerbar");
+
+ innerbar.style.width=parseInt(input)+"%";
+ }
+
+    </script>
+</body>
+</html>
